@@ -1,2 +1,1 @@
-Nền tảng hướng dịch vụ Open Platform
-iCloud Platform 7.0
+Nền tảng hướng dịch vụ Open Platform (iCloud Platform 7.0)
