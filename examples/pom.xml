@@ -1,0 +1,159 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.inet.example</groupId>
+	<artifactId>example-biz</artifactId>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<version>1.0.0.RELEASE</version>
+	<packaging>jar</packaging>
+	<name>example biz</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<cloud-docx.version>3.0</cloud-docx.version>
+		<cloud-protocol.version>1.0</cloud-protocol.version>
+		<com.inet.base.version>2.5.1.RELEASE</com.inet.base.version>
+		<com.inet.web.version>2.5.1.RELEASE</com.inet.web.version>
+		<icloud-analysis-web.version>2.0</icloud-analysis-web.version>
+		<icloud-common.version>1.0</icloud-common.version>
+		<icloud-config.version>3.0</icloud-config.version>
+		<icloud-core.version>4.0</icloud-core.version>
+		<icloud-nosql-web.version>4.0</icloud-nosql-web.version>
+		<icloud-plugin.version>3.0</icloud-plugin.version>
+		<icloud-web.version>4.0</icloud-web.version>
+		<icloud-xdb.version>3.5.0</icloud-xdb.version>
+		<javax.inject.version>1</javax.inject.version>
+		<json-lib.version>2.4</json-lib.version>
+		<slf4j.version>1.7.7</slf4j.version>
+		<mongo-java-driver.version>3.6.2</mongo-java-driver.version>
+		<unifiedpush-lib.version>2.0</unifiedpush-lib.version>
+		<xwork-core.version>2.3.34</xwork-core.version>
+		<maven.build.timestamp.format>MMM dd, yyyy
+		</maven.build.timestamp.format>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<build.timestamp>${maven.build.timestamp}</build.timestamp>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<repositories>
+	</repositories>
+	<dependencies>
+		<!-- iNet library -->
+		<dependency>
+			<groupId>com.inet</groupId>
+			<artifactId>cloud-docx</artifactId>
+			<version>${cloud-docx.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.inet</groupId>
+			<artifactId>cloud-protocol</artifactId>
+			<version>${cloud-protocol.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.inet</groupId>
+			<artifactId>com.inet.base</artifactId>
+			<version>${com.inet.base.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.inet</groupId>
+			<artifactId>com.inet.web</artifactId>
+			<version>${com.inet.web.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.inet</groupId>
+			<artifactId>icloud-analysis-web</artifactId>
+			<version>${icloud-analysis-web.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.inet</groupId>
+			<artifactId>icloud-common</artifactId>
+			<version>${icloud-common.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.inet</groupId>
+			<artifactId>icloud-config</artifactId>
+			<version>${icloud-config.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.inet</groupId>
+			<artifactId>icloud-core</artifactId>
+			<version>${icloud-core.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.inet</groupId>
+			<artifactId>icloud-nosql-web</artifactId>
+			<version>${icloud-nosql-web.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.inet</groupId>
+			<artifactId>icloud-plugin</artifactId>
+			<version>${icloud-plugin.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.inet</groupId>
+			<artifactId>icloud-web</artifactId>
+			<version>${icloud-web.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.inet</groupId>
+			<artifactId>icloud-xdb</artifactId>
+			<version>${icloud-xdb.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.inet</groupId>
+			<artifactId>unifiedpush-lib</artifactId>
+			<version>${unifiedpush-lib.version}</version>
+		</dependency>
+
+		<!-- java inject -->
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>${javax.inject.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>6.0</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- json library -->
+		<dependency>
+			<groupId>net.sf.json-lib</groupId>
+			<artifactId>json-lib</artifactId>
+			<version>${json-lib.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.struts.xwork</groupId>
+			<artifactId>xwork-core</artifactId>
+			<version>${xwork-core.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>${mongo-java-driver.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+	</dependencies>
+</project>

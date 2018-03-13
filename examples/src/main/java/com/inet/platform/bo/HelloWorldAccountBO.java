@@ -19,6 +19,7 @@ import javax.inject.Inject;
 import javax.inject.Named;
 
 import com.inet.platform.model.HelloWorldAccount;
+import com.inet.platform.model.HelloWorldAccount;
 import com.inet.xportal.nosql.web.bf.MagicContentBF;
 import com.inet.xportal.nosql.web.bo.MagicContentBO;
 import com.inet.xportal.web.context.ContentContext;
